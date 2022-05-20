@@ -20,7 +20,7 @@ class WithdrawCommand implements Command {
 
         String currencyCode = ConsoleHelper.askCurrencyCode();
         CurrencyManipulator manipulator = CurrencyManipulatorFactory.getManipulatorByCurrencyCode(currencyCode);
-
+//
         while (true) {
             try {
                 ConsoleHelper.writeMessage(res.getString("specify.amount"));
